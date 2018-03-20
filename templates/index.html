@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+	<title>Inscreva-se para o Flow</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://ufile.io/reuvg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        /*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+/*
+ * General styles
+ */
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+body, html{
+    /*height: 100%;*/
+ 	background:url(https://uploaddeimagens.com.br/images/001/321/124/original/WhatsApp_Image_2018-03-07_at_21.16.29.jpeg?1520515200);
+ 	background-repeat:  no-repeat;
+	font-family: 'Oxygen', sans-serif;
+	background-size: 1000px 1000px;
+	background-position: center; 
+}
+
+.main{
+ 	margin:50px 15px;
+}
+
+h1.title { 
+	font-size: 50px;
+	font-family: 'Passion One', cursive; 
+	font-weight: 400; 
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+.form-control {
+    height: auto!important;
+padding: 8px 12px !important;
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+#button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 600px;
+    padding: 10px 20px;
+	background: lightgray;
+	    color: black;
+    text-shadow: none;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>Admin</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-dark bg-primary justify-content-between">
+			<a class="navbar-brand" style="color:white; padding-left: 20px;">Flow</a>
+		</nav>
+		<div class="container">
+			
+			<div class="row main">
+				<div class="main-login main-center">
+					{% if messages %}
+					<div class="form-group">
+					{% for message in messages %}
+					<div class="input-group" style="padding: 200px 0px 300px 0px;">
+							<span class="input-group-addon"><i class="fa fa-check-square fa" style="color: green;" aria-hidden="true"></i></span>
+							<div class="form-control" name="email" id="email"  placeholder="Digite seu E-mail">{{ message }}</div>
+					</div>
+					{% endfor %}
+					</div>
+					{% endif %}
+					{% if form %}
+					
+					<ul>
+						{% for error in form.errors %}
+						<li>{{ error }}</li>
+						{% endfor %}
+					</ul>
+					
+				<h5>Faça sua inscrição para o processo seletivo do time de desenvolvimento Flow/UFAL</h5>
+					<form class="" method="POST" enctype="multipart/form-data" action="">
+							{% csrf_token %}
+						
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Nome</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" style="color: purple;" aria-hidden="true"></i></span>
+									<input required type="text" class="form-control" name="name" id="name"  placeholder="Digite seu nome completo"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">E-mail</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" style="color: darkblue;" aria-hidden="true"></i></span>
+									<input required type="text" class="form-control" name="email" id="email"  placeholder="Digite seu E-mail"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phone" class="cols-sm-2 control-label">Telefone</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone fa" style="color: blue;" aria-hidden="true"></i></span>
+									<input required type="text" class="form-control" name="phone" id="phone"  placeholder="Digite o número do seu telefone"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="course" class="cols-sm-2 control-label">Curso</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-graduation-cap fa" style="color: green;" aria-hidden="true"></i></span>
+									<input required type="text" class="form-control" name="course" id="course"  placeholder="Digite seu curso"/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+								<label for="semester" class="cols-sm-2 control-label">Semestre atual</label>
+								<div class="cols-sm-10">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-tasks fa" style="color: orange;" aria-hidden="true"></i></span>
+										<select class="form-control" name="semester" id="semester">
+											<option value="2" selected>2º período</option>
+											<option value="3">3º período</option>
+											<option value="4">4º período</option>
+											<option value="5" >5º período</option>
+											<option value="6" >6º período</option>
+										  </select>
+										<!--<input required type="number"   placeholder="Digite seu semestre atual"/>-->
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+									<label for="analytical_history" class="cols-sm-2 control-label">Histórico analítico</label>
+									<div class="cols-sm-10">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-paperclip fa" style="color: red;" aria-hidden="true"></i></span>
+											<input required type="file" class="form-control" name="analytical_history" id="analytical_history"  placeholder="Digite seu curso"/>
+										</div>
+									</div>
+								</div>
+
+
+						<div class="form-group ">
+							<button class="btn btn-primary btn-lg btn-block login-button" type="submit">Inscreva-se</button>
+					   </div>
+						
+					</form>
+				
+				
+				{% endif %}
+				
+				</div>
+			</div>
+		</div>
+		<footer class="row bg-primary" style="">
+				<div class="" align=center>
+				  <p style="padding: 7px; color:white" >Desenvido por Flow.</p>
+				</div>
+			  </footer>
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
